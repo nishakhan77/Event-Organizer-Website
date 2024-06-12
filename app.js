@@ -1,9 +1,15 @@
 var menuBTn = document.querySelector("#menu-bar");
 var navBar = document.querySelector(".navbar");
 
-menuBTn.onclick = ()=>{
+menuBTn.onclick = () => {
   menuBTn.classList.toggle("fa-times");
   navBar.classList.toggle("active");
+};
+
+window.onscroll = () => {
+  menuBTn.classList.remove("fa-times");
+  navBar.classList.remove("active");
+  themeToggler.classList.remove("active");
 };
 
 var themeToggler = document.querySelector(".theme-toggler");

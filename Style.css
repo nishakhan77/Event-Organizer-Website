@@ -1,11 +1,12 @@
 /* Google fonts(Poppins) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
+
+:root {
     --theme-color: #3867d6;
 }
 
-*{
-    font-family: "Poppins",sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,11 +24,11 @@ html {
     scroll-behavior: smooth;
 }
 
-section{
+section {
     padding: 2rem 9%;
 }
 
-body{
+body {
     background: #222;
 }
 
@@ -50,11 +51,11 @@ body{
     font-size: 2.5rem;
 }
 
-.header .logo span{
+.header .logo span {
     color: var(--theme-color);
 }
 
-.header .navbar a{
+.header .navbar a {
     font-size: 1.7rem;
     color: #fff;
     margin-left: 2rem;
@@ -71,7 +72,7 @@ body{
     display: none;
 }
 
-.home .content{
+.home .content {
     text-align: center;
     padding-top: 6rem;
     margin: 2rem auto;
@@ -84,7 +85,7 @@ body{
     text-transform: uppercase;
 }
 
-.home .content h3 span{
+.home .content h3 span {
     color: var(--theme-color);
     text-transform: uppercase;
 }
@@ -133,7 +134,7 @@ body{
 
 .service .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -167,7 +168,7 @@ body{
 }
 
 .about .row {
-    display:flex;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -202,7 +203,7 @@ body{
 
 .gallery .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -255,7 +256,7 @@ body{
     bottom: 0;
 }
 
-.gallery .box-container .box .icons a{
+.gallery .box-container .box .icons a {
     font-size: 2rem;
     color: #fff;
     margin: 0.5rem 1rem;
@@ -267,7 +268,7 @@ body{
 
 .price .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -296,13 +297,13 @@ body{
     padding: 1rem 0;
 }
 
-.price .box-container .box ul li{
+.price .box-container .box ul li {
     font-size: 1.5rem;
     color: #eee;
     padding: 1rem 0;
 }
 
-.price .box-container .box ul li i{
+.price .box-container .box ul li i {
     color: var(--theme-color);
     padding-right: 0.5rem;
 }
@@ -365,7 +366,8 @@ body{
     flex-wrap: wrap;
 }
 
-.contact form .inputBox input, textarea {
+.contact form .inputBox input,
+textarea {
     width: 100%;
     background: #333;
     border-radius: 0.5rem;
@@ -376,12 +378,14 @@ body{
     text-transform: none;
 }
 
-.contact form .inputBox input::placeholder, textarea::placeholder {
+.contact form .inputBox input::placeholder,
+textarea::placeholder {
     color: #eee;
     text-transform: capitalize;
 }
 
-.contact form .inputBox input:focus, textarea:focus {
+.contact form .inputBox input:focus,
+textarea:focus {
     background: #444;
 }
 
@@ -399,7 +403,7 @@ body{
 
 .footer .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -439,7 +443,7 @@ body{
     color: var(--theme-color);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 1rem;
 }
 
@@ -462,7 +466,7 @@ body{
     text-align: center;
 }
 
-.theme-toggler.active{
+.theme-toggler.active {
     right: 0;
 }
 
@@ -501,7 +505,7 @@ body{
     animation: rotate 4s linear infinite;
 }
 
-@keyframes rotate{
+@keyframes rotate {
     0% {
         transform: rotate(360deg);
     }
@@ -516,7 +520,7 @@ body{
         padding: 1.5rem 2rem;
     }
 
-    section{
+    section {
         padding: 2rem;
     }
 }
@@ -526,6 +530,10 @@ body{
         display: initial;
     }
 
+    .header .fa-times {
+        transform: rotate(360deg);
+    }
+
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -533,7 +541,11 @@ body{
         right: 0;
         border-top: 0.1rem solid #222;
         background: #333;
-        clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .header .navbar a {
@@ -543,5 +555,23 @@ body{
         padding: 1.3rem;
         margin: 1.3rem;
         font-size: 2rem;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .home-slider .swiper-slide {
+        width: 27rem;
+    }
+
+    .contact form .inputBox input {
+        width: 100%;
     }
 }
