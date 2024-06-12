@@ -506,3 +506,42 @@ body{
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-bar {
+        display: initial;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 0.1rem solid #222;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 0 0);
+    }
+
+    .header .navbar a {
+        display: flex;
+        background: #222;
+        border-radius: 0.5rem;
+        padding: 1.3rem;
+        margin: 1.3rem;
+        font-size: 2rem;
+    }
+}
