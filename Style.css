@@ -352,3 +352,26 @@ body{
     padding: 0.5rem;
     font-size: 1.6rem;
 }
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input, textarea {
+    width: 100%;
+    background: #333;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.7rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
