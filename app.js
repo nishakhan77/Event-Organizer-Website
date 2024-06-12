@@ -17,3 +17,26 @@ var swiper = new Swiper(".home-slider", {
     disableOnInteraction: false
   },
 });
+
+
+var swiper = new Swiper(".review-slider", {
+  spaceBetween: 10,
+  grabCursor: true,
+  slidesPerView: 1,
+  loop: true,
+  breakpoints:{
+    0:{
+      slidesPerView:1,
+    },
+    700:{
+      slidesPerView:2,
+    },
+    1050:{
+      slidesPerView:3,
+    },
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+});
