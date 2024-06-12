@@ -1,3 +1,11 @@
+var menuBTn = document.querySelector("#menu-bar");
+var navBar = document.querySelector(".navbar");
+
+menuBTn.onclick = ()=>{
+  menuBTn.classList.toggle("fa-times");
+  navBar.classList.toggle("active");
+};
+
 var themeToggler = document.querySelector(".theme-toggler");
 var themeBtn = document.querySelector(".toggle-btn");
 

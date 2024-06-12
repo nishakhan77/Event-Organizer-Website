@@ -533,7 +533,7 @@ body{
         right: 0;
         border-top: 0.1rem solid #222;
         background: #333;
-        clip-path: polygon(0 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
     }
 
     .header .navbar a {
