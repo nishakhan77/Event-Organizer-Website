@@ -443,3 +443,11 @@ body{
     width: 1rem;
 }
 
+::-webkit-scrollbar-track {
+    background: #444;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+    border-radius: 5rem;
+}
