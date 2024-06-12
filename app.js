@@ -1,3 +1,9 @@
+var themeToggler = document.querySelector(".theme-toggler");
+var themeBtn = document.querySelector(".toggle-btn");
+
+themeBtn.onclick = () => {
+  themeToggler.classList.toggle("active");
+};
 
 var swiper = new Swiper(".home-slider", {
   effect: "coverflow",
