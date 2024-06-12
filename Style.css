@@ -462,6 +462,10 @@ body{
     text-align: center;
 }
 
+.theme-toggler.active{
+    right: 0;
+}
+
 .theme-toggler h3 {
     color: #fff;
     padding: 1rem 0;
