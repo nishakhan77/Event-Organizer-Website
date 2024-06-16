@@ -41,4 +41,12 @@ In order to run this project you need:
 
 - NODE
 
-  <br>
+### Clone this repository to your desired folder:
+
+Commands:
+
+```sh
+  git clone https://github.com/nishakhan77/Event-Organizer-Website.git
+  cd Event-Organizer-Website
+  npm install
+```
