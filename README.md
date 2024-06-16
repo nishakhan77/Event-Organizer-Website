@@ -33,7 +33,7 @@ Author- Vahidunnisha Khan.
 
 - To get a local copy up and running, follow these steps.
 
-<br
+
   
 ### Prerequisites
 
