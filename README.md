@@ -13,3 +13,13 @@ Author- Vahidunnisha Khan.
 ### Tech Stack <a name="tech-stack"></a>
 
 > HTML , CSS and Javascript
+<br>
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Deployed Link Below:
+> soon will be available
+
+- [Live Demo Link](https://nishakhan77.github.io/Event-Organizer-Website/)
+
