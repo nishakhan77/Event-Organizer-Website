@@ -50,3 +50,11 @@ Commands:
   cd Event-Organizer-Website
   npm install
 ```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run dev
+```
