@@ -2,7 +2,9 @@
 This is my Responsive Event Organizer Website.
 <br>
 Author- Vahidunnisha Khan.
+
 <br>
+
 <!-- PROJECT DESCRIPTION -->
 # 📖 Event-Organizer <a name="about-project"></a>
 
@@ -24,8 +26,19 @@ Author- Vahidunnisha Khan.
 - [Live Demo Link](https://nishakhan77.github.io/Event-Organizer-Website/)
 
 <br>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > An Event Organizer website where Engineers from different fields collaborate together.
 
 - To get a local copy up and running, follow these steps.
+
+<br
+  
+### Prerequisites
+
+In order to run this project you need:
+
+- NODE
+
+  <br>
